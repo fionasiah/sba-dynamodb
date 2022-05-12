@@ -11,9 +11,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@DynamoDBDocument
+@DynamoDBDocument //This annotation is required to specify it is a dynamodb document
 @Data
-@NoArgsConstructor
+@NoArgsConstructor //this is important
 @AllArgsConstructor
 public class UserKey implements Serializable {
 
